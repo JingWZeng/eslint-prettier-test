@@ -24,8 +24,8 @@ eslint-config 开头的：来自 npm 包，使用时可以省略前缀 eslint-co
 一个执行配置文件的相对路径或绝对路径;
    */
   'extends': [
-    'plugin:vue/essential',
     'eslint:recommended', // eslint:recommended：ESLint 内置的推荐规则，即 ESLint Rules 列表中打了钩的那些规则;
+    'plugin:vue/essential',
     "plugin:prettier/recommended" //  必须拿到最后 作用就是冲突的时候覆盖前面的起冲突的规则
   ],
  
