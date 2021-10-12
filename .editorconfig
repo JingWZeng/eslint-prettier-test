@@ -1,0 +1,37 @@
+# 告诉 EditorConfig 插件，这是根文件，不用继续往上查找 
+root = true 
+ 
+# 匹配全部文件 
+[*] 
+ 
+# 设置字符集 
+charset = utf-8 
+ 
+# 缩进风格，可选 space、tab 
+indent_style = tab 
+ 
+# 缩进的空格数，当 indent_style = tab 将使用 tab_width 
+# 否则使用 indent_size 
+indent_size = 2 
+tab_width = 2 
+ 
+# 结尾换行符，可选 lf、cr、crlf 
+end_of_line = lf 
+ 
+# 在文件结尾插入新行 
+insert_final_newline = true 
+ 
+# 删除一行中的前后空格 
+trim_trailing_whitespace = true 
+ 
+# 匹配md结尾的文件 
+[*.md] 
+insert_final_newline = false 
+trim_trailing_whitespace = false 
+
+
+# 它提供的格式化的配置参数很少，就 3 个，缩进风格、是否在文件末尾插入新行和是否删除一行中前后空格。但是它还是非常有必要存在的，理由有 3 个：
+
+# 1能够在不同的编辑器和 IDE 中保持一致的代码风格;
+# 2配合插件打开文件即自动格式化，非常方便
+# 3支持格式化的文件类型很多;
